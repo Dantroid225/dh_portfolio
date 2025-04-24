@@ -25,6 +25,9 @@ html {
   --primary-800: #0a6c74;
   --primary-900: #044e54;
 
+  /* secondary */
+  --secondary-50: #beb548;
+
   /* grey */
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
@@ -70,7 +73,7 @@ html {
   --dark-mode-bg-secondary-color: #3f3f3f;
   --dark-mode-text-secondary-color: var(--grey-300);
 
-  --background-color: var(--grey-50);
+  --background-color: var(--secondary-50);
   --text-color: var(--grey-900);
   --background-secondary-color: var(--white);
   --text-secondary-color: var(--grey-500);
@@ -328,4 +331,11 @@ button:disabled {
 .declined {
   background: #ffeeee;
   color: #d66a6a;
+}
+.test {
+  min-height: 80vh; /* Set minimum height to 80% of the viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-50);
 }

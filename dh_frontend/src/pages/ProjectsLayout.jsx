@@ -2,6 +2,9 @@ import { createContext, useContext, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Wrapper from "../assets/wrappers/Projects";
 import { BigSidebar, SmallSidebar, Navbar } from "../components";
+//import links from "../utils/links";
+import Resume from "./Resume";
+import Profile from "./Profile";
 //import { checkDefaultTheme } from "../App";
 
 const ProjectsContext = createContext();
@@ -46,11 +49,27 @@ const ProjectsLayout = () => {
     >
       <Wrapper>
         <main className="projects">
-          <div>
-            <Navbar />
-            <div className="projects-page">
-              <Outlet />
+          <Navbar />
+          <div className="projects-page">
+            <div>
+              <Profile />
             </div>
+            <div>
+              <Resume />
+            </div>
+
+            {/*}
+            {links.map((link) => {
+              const { text, path } = link;
+              return (
+                <section key={text} id={path} className="section">
+                  <h2 className="section-title">{text}</h2>
+
+                  <Outlet />
+                </section>
+              );
+            })}
+              */}
           </div>
         </main>
       </Wrapper>

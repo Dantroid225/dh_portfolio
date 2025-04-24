@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   height: var(--nav-height);
+  position: sticky; /* Make the navbar sticky */
+  top: 20px; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other elements */
   display: flex;
   align-items: center;
   justify-content: space-between; /* Space between logo and links */
@@ -30,7 +33,10 @@ const Wrapper = styled.nav`
   }
 
   .logo-text {
-    display: none;
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white); /* White text */
+    padding-left: 1rem; /* Add padding to the left */
   }
 
   .logo {
@@ -76,9 +82,6 @@ const Wrapper = styled.nav`
     }
     .logo {
       display: none;
-    }
-    .logo-text {
-      display: block;
     }
   }
 `;
