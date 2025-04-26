@@ -1,4 +1,3 @@
-export { default as LandingLayout } from "./LandingLayout";
 export { default as Landing } from "./Landing";
 export { default as Register } from "./Register";
 export { default as Login } from "./Login";
@@ -8,7 +7,6 @@ export { default as Projects } from "./Projects";
 export { default as Hobbies } from "./Hobbies";
 export { default as Resume } from "./Resume";
 export { default as Contact } from "./Contact";
-export { default as Admin } from "./Admin";
 export { default as Profile } from "./Profile";
 /*
 const AddJob = () => {

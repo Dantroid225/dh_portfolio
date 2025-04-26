@@ -1,50 +1,45 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
-  nav {
-    width: var(--fluid-width);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    height: var(--nav-height);
-    display: flex;
-    align-items: center;
-  }
-  .page {
-    min-height: calc(100vh - var(--nav-height));
+  .projects {
+    padding: 60px 20px;
     display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     align-items: center;
-    margin-top: -3rem;
+    gap: 2rem; /* Space between columns */
   }
-  h1 {
-    font-weight: 700;
-    span {
-      color: var(--primary-500);
-    }
-    margin-bottom: 1.5rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
-  p {
-    line-height: 2;
-    color: var(--text-secondary-color);
-    margin-bottom: 1.5rem;
-    max-width: 35em;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .register-link {
-    margin-right: 1rem;
-  }
+
   .main-img {
-    display: none;
+    width: 100%;
+    max-width: 400px; /* Limit the image size */
+    border-radius: var(--border-radius); /* Add rounded corners */
+    box-shadow: var(--shadow-2); /* Add a subtle shadow */
   }
-  .btn {
-    padding: 0.75rem 1rem;
-  }
-  @media (min-width: 992px) {
-    .page {
-      grid-template-columns: 1fr 400px;
-      column-gap: 3rem;
+
+  @media (max-width: 992px) {
+    .projects {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    .image-container {
+      order: -1; /* Move the image to the first column */
     }
     .main-img {
-      display: block;
+      margin-bottom: 2rem; /* Add spacing below the image */
     }
   }
 `;
+
 export default Wrapper;

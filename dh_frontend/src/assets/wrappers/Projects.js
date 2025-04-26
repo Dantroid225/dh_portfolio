@@ -3,24 +3,20 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   .projects {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* Two even columns */
+    gap: 2rem;
   }
+
   .projects-page {
-    width: 90vw;
-    margin: 0 auto;
+    margin: 0;
     padding: 2rem 0;
   }
-   {
-    /*
-  @media (min-width: 992px) {
+
+  @media (max-width: 768px) {
     .projects {
-      grid-template-columns: auto 1fr;
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
     }
-    .projects-page {
-      width: 90%;
-    }
-  }
-  */
   }
 `;
+
 export default Wrapper;

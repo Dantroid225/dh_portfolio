@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   height: var(--nav-height);
+  position: sticky;
+  top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Space between logo and links */
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.9);
-  margin: 20px auto 0 auto; /* Center the navbar */
+  margin: 0 auto; /* Center the navbar */
   width: 90%; /* Restrict the width to fit within margins */
   max-width: 1200px; /* Optional: Limit the maximum width */
   border-radius: var(--border-radius); /* Add rounded corners if desired */
@@ -67,7 +69,7 @@ const Wrapper = styled.nav`
 
   @media (min-width: 992px) {
     position: sticky;
-    top: 0;
+    top: 20px;
     margin: 20px auto 0 auto; /* Ensure it stays centered */
     width: 90%; /* Keep the width within margins */
     max-width: 1200px; /* Optional: Limit the maximum width */
