@@ -2,8 +2,9 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif;
   background-color: rgba(23, 37, 18, 0.8);
-  color: #e8e3e3;
+  color: #e8e3e3; /* Consistent light text color */
   font-size: 16px;
+  line-height: 1.6; /* Improve readability */
 }
 
 nav {
@@ -24,11 +25,67 @@ nav a:hover {
 
 section {
   margin: 0;
+
   background-color: rgba(34, 49, 49, 1);
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e8e3e3; /* Consistent heading color */
+  font-weight: bold;
+  margin: 0;
 }
 
 h1 {
-  font-size: clamp(5rem, 7vw, 11.6rem);
+  font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font size */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #e8e3e3; /* Consistent paragraph color */
+  margin: 0 0 1rem;
+}
+
+a {
+  color: #4a90e2; /* Primary link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e8e3e3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #4a90e2; /* Highlight color */
 }
 
 footer {

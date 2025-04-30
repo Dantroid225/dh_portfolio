@@ -3,11 +3,12 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   background-color: #ffffff; /* White background */
 
-  padding: 2rem;
-
-  .hobbies-header {
+  padding: 3rem;
+  padding-top: 5rem; /* Extra padding at the top */
+  min-height: 70vh; /* Full height of the viewport */
+  .interests-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     h2 {
       font-size: 2rem;
@@ -21,7 +22,7 @@ const Wrapper = styled.section`
     }
   }
 
-  .hobbies-grid {
+  .interests-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 2rem; /* Space between cards */
@@ -55,13 +56,13 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: 992px) {
-    .hobbies-grid {
+    .interests-grid {
       grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
     }
   }
 
   @media (max-width: 768px) {
-    .hobbies-grid {
+    .interests-grid {
       grid-template-columns: 1fr; /* 1 column for small screens */
     }
   }

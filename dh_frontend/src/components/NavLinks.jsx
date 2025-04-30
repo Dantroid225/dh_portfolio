@@ -7,10 +7,9 @@ const NavLinks = ({ isBigSidebar }) => {
   return (
     <div className="nav-links">
       {links.map((link) => {
-        const { text, path, icon } = link;
+        const { text, icon } = link;
         return (
           <NavLink
-            to={path}
             key={text}
             className="nav-link"
             onClick={isBigSidebar ? null : toggleSidebar}

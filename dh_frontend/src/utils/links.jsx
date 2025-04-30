@@ -14,7 +14,7 @@ const links = [
   },
   {
     text: "About Me",
-    path: "hobbies",
+    path: "interests",
     icon: <IoBarChartSharp />,
   },
   {

@@ -1,23 +1,23 @@
 import React from "react";
-import Wrapper from "../assets/wrappers/Hobbies";
+import Wrapper from "../assets/wrappers/Interests";
 
-const Hobbies = () => {
-  const hobbies = [
-    {
-      title: "Hiking",
-      description: "Exploring nature and enjoying scenic trails.",
-    },
-    { title: "Photography", description: "Capturing moments and landscapes." },
+const Interests = () => {
+  const interests = [
+    { title: "Art", description: "Capturing moments and landscapes." },
     {
       title: "Gaming",
       description: "Playing video games to relax and have fun.",
     },
     {
-      title: "Cooking",
+      title: "Hiking",
+      description: "Exploring nature and enjoying scenic trails.",
+    },
+    {
+      title: "Animation",
       description: "Experimenting with recipes and cuisines.",
     },
     {
-      title: "Reading",
+      title: "Film",
       description: "Diving into books and expanding knowledge.",
     },
     { title: "Traveling", description: "Discovering new places and cultures." },
@@ -25,12 +25,12 @@ const Hobbies = () => {
 
   return (
     <Wrapper>
-      <div className="hobbies-header">
-        <h2>Hobbies</h2>
+      <div className="interests-header">
+        <h2>Interests</h2>
         <p>Here are some of my favorite activities and pastimes.</p>
       </div>
-      <div className="hobbies-grid">
-        {hobbies.map((hobby, index) => (
+      <div className="interests-grid">
+        {interests.map((hobby, index) => (
           <div className="card" key={index}>
             <h3>{hobby.title}</h3>
             <p>{hobby.description}</p>
@@ -41,4 +41,4 @@ const Hobbies = () => {
   );
 };
 
-export default Hobbies;
+export default Interests;

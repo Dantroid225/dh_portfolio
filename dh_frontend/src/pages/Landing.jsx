@@ -8,8 +8,11 @@ const Landing = () => {
     <Wrapper>
       <div className="projects">
         <div className="content">
-          <h2>Daniel Hill</h2>
-          <h1>Software Engineer</h1>
+          <h4>Hi! I'm Daniel,</h4>
+          <h2>
+            a seasoned technical professional specializing in software
+            operations, application development, and SaaS implementation.
+          </h2>
         </div>
         <div className="image-container">
           <img src={dhPic} alt="Profile" className="main-img" />

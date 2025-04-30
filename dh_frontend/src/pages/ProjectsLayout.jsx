@@ -30,6 +30,9 @@ const ProjectsLayout = () => {
         logoutUser,
       }}
     >
+      <div>
+        <Navbar />
+      </div>
       <Wrapper>
         <Outlet />
       </Wrapper>

@@ -3,7 +3,7 @@ import {
   ProjectsLayout,
   Error,
   Projects,
-  Hobbies,
+  Interests,
   Resume,
   Contact,
   Profile,
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: "hobbies",
-        element: <Hobbies />,
+        path: "interests",
+        element: <Interests />,
       },
       {
         path: "contact",
